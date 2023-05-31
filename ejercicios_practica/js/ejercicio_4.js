@@ -6,8 +6,26 @@
 
 // Ejercicios con funciones
 
-// function generarInvitados()
 
+// function generarInvitados() {
+//     let lista = [];
+
+// lista.push(prompt("Ingrese el primer invitado:"));
+// lista.push(prompt("Ingrese el segundo invitado:"));
+// lista.push(prompt("Ingrese el tercer invitado:"));
+
+// console.log("Lista de invitados:", lista);
+// }
+function generarInvitados() {
+    var names = [];
+    
+    for (var i = 0; i < 3; i++) {
+      var name = prompt("Ingrese el nombre de su invitado:");
+      names.push(name);
+    }
+    
+    return names;
+  }
 /*
 Alumno: Crear la función "generarInvitados"
 Esta función no recibe ningún paraḿetro de entrada
@@ -30,5 +48,5 @@ en consola la lista
 */
 
 // Definir y crear la función antes de esta llamada
-invitados = generarInvitados();
+var invitados = generarInvitados();
 console.log(`Mis invitados: ${invitados}`)
